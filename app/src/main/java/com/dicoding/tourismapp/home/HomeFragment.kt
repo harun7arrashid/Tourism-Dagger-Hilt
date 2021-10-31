@@ -15,7 +15,7 @@ import com.dicoding.tourismapp.databinding.FragmentHomeBinding
 import com.dicoding.tourismapp.detail.DetailTourismActivity
 import dagger.hilt.android.AndroidEntryPoint
 
-@AndroidEntryPoint
+@AndroidEntryPoint // anotasi untuk yg membutuhkan Injection
 class HomeFragment : Fragment() {
 
     private val homeViewModel: HomeViewModel by viewModels()

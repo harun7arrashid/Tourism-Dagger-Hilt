@@ -8,7 +8,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 
 @Module(includes = [NetworkModule::class, DatabaseModule::class])
-@InstallIn(SingletonComponent::class)
+@InstallIn(SingletonComponent::class) // Module menggunakan Component yg mana, Di sini RepositoryModule masuk ke SingletonComponent karena ia merupakan Component dengan hirarki tertinggi yang bisa digunakan di mana saja.
 abstract class RepositoryModule {
 
     @Binds

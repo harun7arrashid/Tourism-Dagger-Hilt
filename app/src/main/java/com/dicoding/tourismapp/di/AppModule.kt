@@ -10,7 +10,7 @@ import dagger.hilt.android.components.ViewModelComponent
 import dagger.hilt.android.scopes.ViewModelScoped
 
 @Module
-@InstallIn(ViewModelComponent::class)
+@InstallIn(ViewModelComponent::class) // Module di level ViewModel saja
 abstract class AppModule {
 
     @Binds
